@@ -39,7 +39,7 @@ def select_path(paths):
 
 def download_video(video_link, sp):
     vid = YouTube(video_link)
-    st = vid.streams.get_by_itag(22)
+    st = vid.streams.get_by_itag(137)
     if st is not None:
         print("Downloading:", vid.title)
         st.download(sp)
